@@ -8,7 +8,8 @@ int main(){
 
     std::vector<int> total;
     std::vector<int> odd;
-    for (int i = 0; i<7 ;i++) {
+
+    for (int i = 0; i < 7 ; i++) {
         int a;
         std::cin >> a;
         total.push_back(a);
