@@ -31,8 +31,8 @@ void insert(int idx, int num, int arr[],int& len) {
     len++;
 }
 ```
-> ***주의 >>***
-`i > idx` 가 아닌 `i >= idx`로 작성 했을때 `idx == 0`인 경우 `arr[0] = arr[-1]`명령이 수행되어 ***runtime error***가 발생할 수 있다.
+> [!Warning]\
+> `i > idx` 가 아닌 `i >= idx`로 작성 했을때 `idx == 0`인 경우 `arr[0] = arr[-1]`명령이 수행되어 ***runtime error***가 발생할 수 있다.
 
 ### 구현 - erase함수 
 - 이 경우에서도 마찬가지로 원소들을 한 칸 씩 당겨오면 된다.
