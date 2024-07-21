@@ -6,26 +6,28 @@
 ## 2. 기능과 구현 
 ### 구현 
 
-- 구조 : `dat[]`배열에 각 원소들이 들어있고, `pos`변수에 다음 원소가 추가될 위치(인덱스)를 담는다 (pos의 값이 곧 스택 내의 원소의 수와 같다.)
+- 구조 
+    - `dat[]`배열에 각 원소들이 들어있고, `pos`변수에 다음 원소가 추가될 위치(인덱스)를 담는다.
+    - pos의 값이 곧 스택 내의 원소의 수와 같다.
 
 - `push()`
-    - ```cpp
-        void push(int x){
-            dat[pos++] = x;
-        }
-        ```
+  ```cpp
+    void push(int x){
+        dat[pos++] = x;
+    }
+    ```
 - `pop()`
-    - ```cpp
-        void pop(){
-            pos--;
-        }
-        ```
+  ```cpp
+    void pop(){
+        pos--;
+    }
+  ```
 - `top()`
-    - ```cpp
-        void pop(){
-            return dat[pos-1];
-        }
-        ```
+  ```cpp
+    void pop(){
+        return dat[pos-1];
+    }
+  ```
 
 ## 3. STL stack
 ```cpp
@@ -52,4 +54,4 @@ int main(void) {
 > [!Warning]\
 > stack이 비어있을 때 pop이나 top을 호출하면 runtime error가 발생한다.
 
-## 4. 연습문제 - BOJ_10828:스택
+## 4. 연습문제 - BOJ_10828 : 스택
