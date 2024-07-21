@@ -82,12 +82,12 @@ void erase(int addr){
 }
 ```
 ## 3.STL List
-- **`push_back()`,`pop_back()`,`push_front()`,`pop_front()`**
+- *`push_back()`,`pop_back()`,`push_front()`,`pop_front()`*
     - 시간 복잡도 : O(1)
-    - std::list::iterator 사용해야함
-- **`erase()`**
+    - `std::list::iterator` 사용해야함
+- *`erase()`*
     - 제거한 다음 원소의 위치를 반환함
-- **`list.end()`**
+- *`list.end()`*
     - 더미노드로서 제일 뒤 원소의 한 칸 뒤를 가리킨다.
 
 ## 4. 연습문제 - BOJ_1406:에디터 , 손코딩 문제
