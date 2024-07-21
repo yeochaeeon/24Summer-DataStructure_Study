@@ -9,14 +9,16 @@ void insert(int addr, int num){
     dat[unused] = num; // 새로운 원소 생성
     pre[unused] = addr; // 새 원소의 pre에 삽입할 위치의 주소 대입
     nxt[unused] = nxt[addr]; // 새 원소의 nxt에 삽입할 위치의 nxt대입
-    if (nxt[addr] != -1) pre[nxt[addr]] = unused;
+    if (nxt[addr] != -1) pre[nxt[addr]] = unused; 
     nxt[addr]= unused;
-    unused++;
+    // 삽입할 위치의 nxt값과 
+    // 삽입할 위치의 다음 원소의 pre값을 새 원소로 변경
+    unused++; // unused 1증가 
 }
 
 void erase(int addr){
-    nxt[pre[addr]] = nxt[addr];
-    if (nxt[addr] != -1) pre[nxt[addr]] = pre[addr];
+    nxt[pre[addr]] = nxt[addr]; //이전 위치의 nxt를 삭제할 위치의 nxt로 변경
+    if (nxt[addr] != -1) pre[nxt[addr]] = pre[addr]; //다음 위치의 pre를 삭제할 위치의 pre로 변경
 }
 
 void traverse(){
