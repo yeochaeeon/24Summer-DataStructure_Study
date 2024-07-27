@@ -61,3 +61,4 @@ int back(){
 > 배열처럼만 쓰면 된다 → STL Vector 사용
 
 ## 4. 연습문제 - BOJ_10866 : 덱 
+- [10866번:덱](https://www.acmicpc.net/problem/10866)
