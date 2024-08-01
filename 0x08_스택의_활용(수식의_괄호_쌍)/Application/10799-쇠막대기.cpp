@@ -9,7 +9,7 @@ int main(){
         if (c == '(') { // 열리는 괄호면 일단 push
             s.push(c);
             stick++; 
-        } else { // 닫히는 괄호 
+        } else { //  c == ')'
             if ( s.top() == '(') { // 레이저
                 s.push(c);
                 stick--; 
